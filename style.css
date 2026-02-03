@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+}
+
+header h1 {
+    margin: 5% 5% 5% 5%;
+    height: 5vh;
+    width: 10vw;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 200px;
+    gap: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Mantém proporção e corta excesso */
+}
+
+#box1 { /*car r*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+#box2 { /*stands*/
+    grid-column-start: 1;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+#box3 { /*flags*/
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#box4 { /*car f*/
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+#box6 { /*capacete*/
+    grid-column-start: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+#box10 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 15;
+}
+
+#box11 {
+    grid-column-start: 1;
+    grid-row-start: 14;
+    grid-row-end: 15;
+}
+
+#box12 {
+    grid-column-start: 1;
+    grid-row-start: 10;
+    grid-row-end: 14;
+}
+
+.footer {
+    color: darkred;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    justify-content: end;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
